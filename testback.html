@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color:#dfbc5e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+  #socialmedia{
+position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+h1{
+  font-size: 500%
+}
+body{
+  background-color:black;
+}
+p.ex{
+margin-top:300px;
+margin-bottom: 300px;
+margin-right:250px;
+margin-left: 80px;
+}
+  #wss{
+    opacity:0;
+    -webkit-transition:
+  opacity 1.0s linear 1s;
+  transition:opacity 1.0s linear 0s;
+  }
+  </style>
+
+  <script>
+  var wss_i=0;
+  var wss_array=["Beautiful","Unique","Powerful","Sexy"];
+  var wss_elem;
+  function wssNext(){
+wss_i++;
+wss_elem.style.opacity=0;
+if(wss_i>(wss_array.length-1)){
+  wss_i=0;
+}
+setTimeout('wssSlide()',2000);
+  }
+  function wssSlide(){
+wss_elem.innerHTML=wss_array[wss_i];
+wss_elem.style.opacity=1;
+setTimeout('wssNext()',1000);
+  }
+  </script>
+</head>
+<body>
+  <ul>
+<li><a href="testback.html">Home</a></li>
+<li><a href="#">Accessories</a></li> 
+ <li><a href="test2.html">Clothes</a></li>
+ <li><a href="faq.html">FAQ</a></li>
+</ul>
+  <p class="ex"><h1><center><font color=#dfbc5e> M&A is <span id="wss"></font></span></h1></p>
+  <script>wss_elem=document.getElementById("wss"); wssSlide();</script>
+
+<div id="socialmedia">
+<img src="twitter.png" height="40" weight="40"/>
+<img src="instagram.png"height="40" weight="40"/>
+<img src="facebook.png"height="40" weight="40"/>
+</div>
+  </body>
+  </html>
+
+
