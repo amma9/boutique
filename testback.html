@@ -48,14 +48,14 @@ margin-left: 80px;
   #wss{
     opacity:0;
     -webkit-transition:
-  opacity 1.0s linear 1s;
+  opacity 1.0s linear 0s;
   transition:opacity 1.0s linear 0s;
   }
   </style>
 
   <script>
   var wss_i=0;
-  var wss_array=["Beautiful","Unique","Powerful","Sexy"];
+  var wss_array=["Beauty","Unique","Power","Sexy"];
   var wss_elem;
   function wssNext(){
 wss_i++;
@@ -75,7 +75,7 @@ setTimeout('wssNext()',1000);
 <body>
   <ul>
 <li><a href="testback.html">Home</a></li>
-<li><a href="accessories-2.html">Accessories</a></li> 
+<li><a href="access.html">Accessories</a></li> 
  <li><a href="test2.html">Clothes</a></li>
  <li><a href="faq.html">FAQ</a></li>
 </ul>
@@ -83,10 +83,25 @@ setTimeout('wssNext()',1000);
   <script>wss_elem=document.getElementById("wss"); wssSlide();</script>
 
 <div id="socialmedia">
-<img src="twitter.png" height="40" weight="40"/>
-<img src="instagram.png"height="40" weight="40"/>
-<img src="facebook.png"height="40" weight="40"/>
-</div>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://static1.squarespace.com/static/546e7120e4b0f42617a4c8b4/t/548a11cbe4b0525d365cdf54/1418334667402/Twitter2_Gold_Icon.png" alt="Twitter" width="32" height="32">
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://static1.squarespace.com/static/546e7120e4b0f42617a4c8b4/t/548a118ee4b045184d903e74/1418334606809/Instagram_Gold_Icon.png" alt="Instagram" width="32" height="32">
+
+
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
+
   </body>
   </html>
 
