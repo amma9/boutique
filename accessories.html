@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">
+
+   function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      if(e.style.display == 'block')
+         e.style.display = 'none';
+      else
+         e.style.display = 'block';
+   }
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+*{padding:0;
+margin:0;
+}
+body{
+   font-family:sans-serif;
+}
+a{text-decoration: none;color:#B29600; font-size:14px;}
+li{list-style-type:none;}
+
+header{
+width:100%;
+height:50px;
+margin:auto;
+border-bottom:1px solid #EEE;
+z-index:99;
+}
+#brand{
+       float:left;
+   line-height:50px;
+   color:#B29600;
+   font-size:30px;
+   font-weight: bolder;
+}
+
+nav{
+   width:100%;
+   text-align: center;
+}
+nav ul{line-height: 40px;}
+nav li{display:inline-block;}
+nav a{padding:10px;color:#B29600;}
+nav a:hover{background:
+#b2b2b2
+;color:#B29600;
+   border-radius: 5px;
+}
+   /*------------ magic starts*/
+   .menu{
+       width :100%;
+       height:50px;
+       background:#000000;
+       position:absolute;
+       top: -51px;
+       transition: all .3s eas-in-out;
+       -webkit-transition: all .3s eas-in-out;
+       transition: all .3s eas-in-out;
+       transition: all .3s eas-in-out;
+       z-index:-1;
+   }
+.menu-icon{
+   float:right;
+   padding:10px 20px;
+   background:#000000;
+   color:#B29600;
+   cursor:pointer;
+   border-radius:5px;
+   margin:5px 5px 0 0;
+}
+#menuToggle {
+   display: none;}
+   #menuToggle:checked ~ .menu {position:absolute;top:51px;}
+   .popup-position{
+   display:none;
+position:fixed;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+}
+
+
+#popup-wrapper{
+   width:500px;
+   margin:70px auto;
+   text-align:left;
+
+}
+
+#popup-container{
+background-color: #FFF;
+padding:20px;
+border-radius:4px;
+}
+
+#wrapper{
+   width:960px;
+   margin:70px ;
+   text-align:left;
+}
+
+</style>
+
+</head>
+<body>
+   <input type="checkbox" id="menuToggle">
+   <label for="menuToggle" class="menu-icon">&#9776;</label>
+   <header>
+       <div id="brand"> M & A </div>
+   </header>
+   <nav class="menu">
+         <ul>
+               <li><a href="testback.html">Home</a></li>
+<li><a href="accessories-2.html">Accessories</a></li> 
+<li><a href="test2.html">Clothes</a></li>
+<li><a href="faq.html">FAQ</a></li>
+  <div id="popup-box1" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box1');">x</a></p>
+    <div id="popup-container">
+   <img title="poncho" src="http://images.anthropologie.com/is/image/Anthropologie/7153438971549_009_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Patio Poncho<br>
+        $74.00<br>
+    </p>
+    </div>
+</div>
+</div>
+ <div id="popup-box2" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box2');">x</a></p>
+    <div id="popup-container">
+   <img title="pin" src="http://images.anthropologie.com/is/image/Anthropologie/7156334745002_070_b2?$redesign-zoom-5x$" width="202" height="252"><p><fontface="papyrus">Moon dipped bobby pin<br>
+        $9.50<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+     <div id="popup-box3" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box3');">x</a></p>
+    <div id="popup-container">
+   <img title="beanie" src="http://images.anthropologie.com/is/image/Anthropologie/7152369054400_001_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Shimmer beanie<br>
+        $25.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+      <div id="popup-box4" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box4');">x</a></p>
+    <div id="popup-container">
+   <img title="collar" src="http://images.anthropologie.com/is/image/Anthropologie/7153346490705_015_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Fox collar<br>
+        $35.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+         <div id="popup-box5" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box5');">x</a></p>
+    <div id="popup-container"><img title="earings" src="http://images.anthropologie.com/is/image/Anthropologie/7410315937414_012_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Lace wrapped earrings<br>
+        $35.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+       <div id="popup-box6" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box6');">x</a></p>
+    <div id="popup-container"><img title="earings" src="http://images.anthropologie.com/is/image/Anthropologie/7412334741014_041_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Isola drop earrings<br>
+        $26.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+      <div id="popup-box7" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box7');">x</a></p>
+    <div id="popup-container"><img title="watch" src="http://images.anthropologie.com/is/image/Anthropologie/7410101651317_009_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Lark watch<br>
+        $49.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+  <div id="popup-box8" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box8');">x</a></p>
+    <div id="popup-container"><img title="necklace" src="http://images.anthropologie.com/is/image/Anthropologie/7412273923412_030_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">FLoral ribbon necklace<br>
+        $20.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+   <div id="popup-box9" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box9');">x</a></p>
+    <div id="popup-container"><img title="scarf" src="http://images.anthropologie.com/is/image/Anthropologie/7153450751620_000_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Geometric scarf<br>
+        $25.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+     <div id="popup-box10" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box10');">x</a></p>
+    <div id="popup-container"><img title="headband" src="http://images.anthropologie.com/is/image/Anthropologie/37695319_070_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Gold goddess headband<br>
+        $24.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+    <div id="popup-box11" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box11');">x</a></p>
+    <div id="popup-container"><img title="pouch" src="http://images.anthropologie.com/is/image/Anthropologie/37181799_070_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Cackatoo pouch<br>
+        $32.00<br>    
+    </p>
+
+    </div>
+</div>
+</div>
+      <div id="popup-box12" class="popup-position">
+    <div id="popup-wrapper">
+          <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box12');">x</a></p>
+    <div id="popup-container"><img title="passport" src="http://images.anthropologie.com/is/image/Anthropologie/37553062_040_b?$pdp-detail-shot$" width="202" height="252"><p><fontface="papyrus">Tea time passport case<br>
+        $22.00<br>    
+    </p>
+   </div>
+</div>
+</div>
+<div id="wrapper">
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box1');"><img title="poncho" src="http://images.anthropologie.com/is/image/Anthropologie/7153438971549_009_b?$pdp-detail-shot$"width="202"height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box2');"><img title="pin" src="http://images.anthropologie.com/is/image/Anthropologie/7156334745002_070_b2?$redesign-zoom-5x$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box3');"><img title="beanie" src="http://images.anthropologie.com/is/image/Anthropologie/7152369054400_001_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box4');"><img title="collar" src="http://images.anthropologie.com/is/image/Anthropologie/7153346490705_015_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box5');"><img title="earrings" src="http://images.anthropologie.com/is/image/Anthropologie/7410315937414_012_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box6');"><img title="earrings" src="http://images.anthropologie.com/is/image/Anthropologie/7412334741014_041_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box7');"><img title="watch" src="http://images.anthropologie.com/is/image/Anthropologie/7410101651317_009_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box8');"><img title="necklace" src="http://images.anthropologie.com/is/image/Anthropologie/7412273923412_030_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box9');"><img title="scarf" src="http://images.anthropologie.com/is/image/Anthropologie/7153450751620_000_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box10');"><img title="headband" src="http://images.anthropologie.com/is/image/Anthropologie/37695319_070_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box11');"><img title="pouch" src="http://images.anthropologie.com/is/image/Anthropologie/37181799_070_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+<a href="javascript:void(0)"onclick="toggle_visibility('popup-box12');"><img title="passport" src="http://images.anthropologie.com/is/image/Anthropologie/37553062_040_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
+</div>
+<div id="socialmedia">
+       <img height="40" src=
+        "https://image.freepik.com/free-icon/twitter-social-outlined-logo_318-69880.png">
+        <img height="40" src=
+        "file:///Users/ammathomas/Downloads/instagram.png"> <img height="40"
+        src=
+        "file:///Users/ammathomas/Downloads/facebook.png">
+    </div>
+ </body>
+ </html>
