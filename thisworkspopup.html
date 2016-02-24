@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+</head>
+<style>
+
+
+
+body{
+    overflow-y:scroll;
+    padding:0;
+    margin:0;
+    font-family:Roboto;
+    font-size: 16px;
+    color:#555;
+    height:2000px;
+}
+
+.popup-position{
+    display:none;
+position:fixed;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+}
+#popup-wrapper{
+    width:500px;
+    margin:70px auto;
+    text-align:left;
+
+}
+
+#popup-container{
+background-color: #FFF;
+padding:20px;
+border-radius:4px;
+}
+
+#wrapper{
+    width:960px;
+    margin:40px auto;
+    text-align:left;
+}
+
+</style>
+<body>
+
+
+
+<div id="popup-box1" class="popup-position">
+    <div id="popup-wrapper">
+    <div id="popup-container">
+        <h3>Popup box1 </h3>
+        <p> woohoo</p>
+        <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box1');">close popupbox</a></p>
+    </div>
+</div>
+</div>
+
+<body>
+
+        <div class="img">
+    <img title="Mididress" src="http://static1.squarespace.com/static/53e2d6cce4b0aa880a2f9411/56789af3cbced6107e8a97a4/56789ca6df40f3876baa7892/1450745088448/IMG_7157.jpg?format=500w" onmouseover="this.src='http://static1.squarespace.com/static/53e2d6cce4b0aa880a2f9411/56789af3cbced6107e8a97a4/56789b23cbced6107e8a99ac/1450744628881/IMG_7185.jpg?format=500w'" onmouseout="this.src='http://static1.squarespace.com/static/53e2d6cce4b0aa880a2f9411/56789af3cbced6107e8a97a4/56789ca6df40f3876baa7892/1450745088448/IMG_7157.jpg?format=500w'"/hspace="50">
+  <div class="desc"> I Woke Up Like This $60.00</div>
+</div>
+
+
+<div id="popup-box2" class="popup-position">
+    <div id="popup-wrapper">
+    <div id="popup-container">
+        <img title="backless" src="http://static1.squarespace.com/static/53e2d6cce4b0aa880a2f9411/56082ab3e4b0fb7874ba7af2/566c58d357eb8de92a4fa7a5/1449941204923/IMG_6480.jpg?format=500w"width="252" height="252"><p>red dress <br>
+        material<br>
+        color<br>
+    </p>
+        <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box2');">I wok e</a></p>
+    </div>
+</div>
+</div>
+
+<body>
+<div id="popup-box3" class="popup-position">
+    <div id="popup-wrapper">
+    <div id="popup-container">
+        <h3>its okay  </h3>
+        <p> woohoo</p>
+        <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box3');">close popupbox</a></p>
+    </div>
+</div>
+</div>
+<div id="wrapper">
+<p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box1');">Open box 1 </a></p>
+<p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box2');">Open box 2 </a></p>
+<p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box3');">Open box 2 </a></p>
+</div>
+ </body>
+ </html>
