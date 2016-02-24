@@ -46,11 +46,7 @@ nav{
 nav ul{line-height: 40px;}
 nav li{display:inline-block;}
 nav a{padding:10px;color:#B29600;}
-nav a:hover{background:
-#b2b2b2
-;color:#B29600;
-   border-radius: 5px;
-}
+
    /*------------ magic starts*/
    .menu{
        width :100%;
@@ -106,6 +102,16 @@ border-radius:4px;
    text-align:left;
 }
 
+
+#socialmedia{
+position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+ 
+}
+
+
 </style>
 
 </head>
@@ -117,10 +123,10 @@ border-radius:4px;
    </header>
    <nav class="menu">
          <ul>
-               <li><a href="testback.html">Home</a></li>
-<li><a href="accessories-2.html">Accessories</a></li> 
-<li><a href="test2.html">Clothes</a></li>
-<li><a href="faq.html">FAQ</a></li>
+               <li><a href="tesback2.html">Home</a></li>
+<li><a href="accessories.html">Accessories</a></li> 
+<li><a href="final2.html">Clothes</a></li>
+<li><a href="faq2.html">FAQ</a></li>
   <div id="popup-box1" class="popup-position">
     <div id="popup-wrapper">
           <p><a href="javscript:void(0)"onclick="toggle_visibility('popup-box1');">x</a></p>
@@ -258,12 +264,23 @@ border-radius:4px;
 <a href="javascript:void(0)"onclick="toggle_visibility('popup-box12');"><img title="passport" src="http://images.anthropologie.com/is/image/Anthropologie/37553062_040_b?$pdp-detail-shot$"width="202" height="252" hspace="30"> </a>
 </div>
 <div id="socialmedia">
-       <img height="40" src=
-        "https://image.freepik.com/free-icon/twitter-social-outlined-logo_318-69880.png">
-        <img height="40" src=
-        "file:///Users/ammathomas/Downloads/instagram.png"> <img height="40"
-        src=
-        "file:///Users/ammathomas/Downloads/facebook.png">
-    </div>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://static1.squarespace.com/static/546e7120e4b0f42617a4c8b4/t/548a11cbe4b0525d365cdf54/1418334667402/Twitter2_Gold_Icon.png" alt="Twitter" width="32" height="32">
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://static1.squarespace.com/static/546e7120e4b0f42617a4c8b4/t/548a118ee4b045184d903e74/1418334606809/Instagram_Gold_Icon.png" alt="Instagram" width="32" height="32">
+
+
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
  </body>
  </html>
